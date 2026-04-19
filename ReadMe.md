@@ -2,7 +2,7 @@
 
 📧 [wahababdul7297@gmail.com](mailto:wahababdul7297@gmail.com)
 📞 +92 332 6500089
-🔗 https://linkedin.com/abdul-wahab-mk
+🔗 https://www.linkedin.com/in/abdul-wahab-mk/
 
 ---
 
