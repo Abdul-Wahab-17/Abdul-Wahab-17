@@ -72,9 +72,15 @@ SONiC · PTF · GNS3 · Packet Capture Analysis · Protocol Testing
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Abdul-Wahab-17&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Abdul-Wahab-17&layout=compact&theme=tokyonight&hide_border=true)
+  <img
+    src="https://github-readme-stats-sigma-five.vercel.app/api?username=Abdul-Wahab-17&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"
+    height="180em"
+  />
 
+  <img
+    src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Abdul-Wahab-17&layout=compact&theme=tokyonight&hide_border=true"
+    height="180em"
+  />
 
 </div>
 
