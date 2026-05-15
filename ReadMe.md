@@ -2,9 +2,6 @@
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Abdul%20Wahab&fontSize=60&fontColor=ffffff&fontAlignY=38)
 
-**Backend Engineer | Systems & Machine Learning**
-
-`03326500089`
 
 <a href="mailto:wahababdul7297@gmail.com">
   <img src="https://img.shields.io/badge/wahababdul7297%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
