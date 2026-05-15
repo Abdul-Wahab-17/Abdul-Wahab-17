@@ -4,6 +4,8 @@
 
 **Backend Engineer | Systems & Machine Learning**
 
+`03326500089`
+
 <a href="mailto:wahababdul7297@gmail.com">
   <img src="https://img.shields.io/badge/wahababdul7297%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
 </a>
@@ -20,30 +22,43 @@
 
 ### About
 
-Computer Science student at **SEECS, NUST** focused on building reliable backend systems.  
-Experience across **systems, networking, and machine learning** — from protocol‑level testing in a Linux‑based network OS to end‑to‑end ML pipelines and production‑style backend services. Emphasis on correctness, edge‑case behaviour, and performance in real‑world conditions.
+Computer Science student at **SEECS, NUST** focused on building reliable backend systems and real-world ML applications.  
+Hands-on experience across **network systems testing, backend engineering, and end-to-end ML pipelines** with emphasis on correctness, edge-case behaviour, and production-minded design.
 
 ---
 
 ### Technical Skills
 
 **Languages**  
-Java · Python · C/C++ · JavaScript · Bash
-
-**Backend & Frameworks**  
-Spring Boot · Spring Security · Spring Data JPA · Express.js · Flask
+Java · C/C++ · Python · JavaScript · Bash
 
 **Machine Learning**  
-scikit‑learn · TensorFlow · Keras · Pandas · NumPy
+scikit-learn · TensorFlow · Keras · PyTorch · NumPy · Pandas
 
-**Frontend**  
-React · Tailwind CSS
+**Frameworks & Tools**  
+Spring Boot · Spring Security · React · ExpressJS · Docker · Redis · MySQL · MongoDB · Git · Linux
 
-**Databases & DevOps**  
-MySQL · MongoDB · Redis · Docker · Linux
+---
 
-**Networking & Systems**  
-SONiC · PTF · GNS3 · Packet Capture Analysis · Protocol Testing
+### Education
+
+**SEECS, NUST**  
+Bachelor of Science in Computer Science · Sept 2023 – Present
+
+---
+
+### Experience
+
+**Network Engineering Intern, ONT Lab, NUST** · June 2025 – Sept 2025  
+- Developed automated PTF-based test cases for SONiC to validate RX/TX counters, pause-frame handling, and control-plane packet behavior under targeted traffic scenarios.  
+- Identified and validated an RX_DROP counter edge case involving IEEE 802.3x XON/XOFF pause frames, preventing silent counter regressions in SONiC testing workflows.  
+- Contributed a merged upstream test case to the SONiC master branch and analyzed packet captures and interface counters to correlate forwarding behavior with control-plane statistics.  
+Merged PR: `sonic-net/sonic-mgmt#20543`
+
+**Full Stack Developer, QWoods** · May 2024 – Sept 2024  
+- Integrated WhatsApp communication workflows into the company inventory management system to automate operational and customer-facing messaging processes.  
+- Developed backend APIs and notification pipelines for inventory updates, order tracking, and stock alerts using WhatsApp integration services.  
+- Collaborated on frontend and backend modules to improve inventory visibility, workflow efficiency, and day-to-day operational management.
 
 ---
 
@@ -51,10 +66,9 @@ SONiC · PTF · GNS3 · Packet Capture Analysis · Protocol Testing
 
 | Project | Description | Technologies | Repository |
 |---------|-------------|--------------|------------|
-| **Crop Yield Prediction** | End‑to‑end ML pipeline predicting county‑level crop yields from 3M+ data points using historical yield, climate, soil, and geographic data. Designed leakage‑safe temporal splits, engineered domain‑specific features, and evaluated 10+ regression models (Random Forest selected). Deployed behind a Flask API with a React frontend. | Python, scikit‑learn, Flask, React | [Link](https://github.com/Abdul-Wahab-17/Crop-Yield-Prediction) |
-| **TransitFlow** | Full‑stack transport management application with JWT authentication, role‑based access control, and a layered architecture (controllers → services → persistence). Dockerized for consistent development and deployment. | Spring Boot, Spring Security, MySQL, JPA, React, Docker | [Link](https://github.com/Abdul-Wahab-17/TransitFlow) |
-| **Fault‑Tolerant EV Communication** | Implemented Hamming Code‑based error detection and correction for in‑vehicle data paths and onboard memory. Simulated hardware faults and electromagnetic interference to evaluate reliability in automotive‑embedded contexts. | C/C++ | [Link](https://github.com/Abdul-Wahab-17/Memory-ECC) |
-| **SONiC Protocol Testing** | Contributed PTF‑based test cases to the SONiC open‑source network OS. Identified and validated a counter correctness edge case in RX_DROP statistics during IEEE 802.3x pause‑frame handling, preventing silent regressions. | SONiC, PTF, packet analysis | [Merged PR](https://github.com/sonic-net/sonic-mgmt/pull/20543) |
+| **CardSense** | Built a real-time playing-card detection and Blackjack strategy assistance system using a fine-tuned YOLOv8n model trained on a 7,012-image custom and public dataset. Achieved 87% mAP@0.5 with ~120 ms end-to-end latency and developed backend inference infrastructure using FastAPI, Redis streams, and distributed worker pipelines for WebSocket-based state updates. | Python, YOLOv8, FastAPI, Redis, WebSockets | [Link](https://github.com/Abdul-Wahab-17/CardSense) |
+| **Crop Yield Prediction System** | Built an end-to-end machine learning pipeline for county-level crop yield prediction by integrating yield, climate, soil, temporal, and geographic datasets into a 3M+ record training set. Trained and evaluated 10+ regression models with leakage-safe preprocessing and temporal validation, then integrated the final model into a Flask backend and React frontend. | Python, scikit-learn, Flask, React | [Link](https://github.com/Abdul-Wahab-17/Crop-Yield-Prediction) |
+| **TransitFlow** | Developed a full-stack transport workflow management platform with Spring Boot, React, MySQL, and Docker. Designed REST APIs, authentication flows, and role-based authorization with Spring Security and JWT, and implemented persistent domain models using Spring Data JPA. | Spring Boot, Spring Security, React, MySQL, Docker, JPA | [Link](https://github.com/Abdul-Wahab-17/TransitFlow) |
 
 ---
 
