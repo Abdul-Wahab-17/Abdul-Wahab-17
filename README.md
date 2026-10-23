@@ -44,18 +44,47 @@ I've shipped backend services professionally, contributed tests to the SONiC net
 
 ### Projects
 
-**[CardSense](https://github.com/Abdul-Wahab-17/CardSense)**: real-time card detection and Blackjack assistant\
-Fine-tuned YOLOv8n on a 7,012-image dataset, reaching 87% mAP@0.5 at about 120 ms end-to-end latency. Frames go through a FastAPI backend and Redis Streams to parallel inference workers, and detections stream to a React dashboard over WebSockets.\
+**[CardSense](https://github.com/Abdul-Wahab-17/CardSense)**: real-time card detection and Blackjack assistant
+
+- Fine-tuned YOLOv8n on a 7,012-image custom and public dataset, reaching 87% mAP@0.5 at about 120 ms end-to-end latency.
+- Distributed inference: a FastAPI backend queues camera frames on Redis Streams, and parallel YOLO workers consume them through a consumer group, scaling across machines and processes.
+- Fuses hand and table camera feeds into one game state, smoothed with N-of-M frame consensus, and recommends legal moves from a rules engine with an optional LLM advisor.
+- Streams live detections to a React dashboard over WebSockets; runs with Docker Compose and GitHub Actions CI.
+
 `Python` `YOLOv8` `FastAPI` `Redis Streams` `WebSockets` `React` `Docker`
 
-**[AgroYield](https://github.com/Abdul-Wahab-17/AgroYield)**: crop yield prediction\
-End-to-end ML system predicting U.S. county-level crop yields from 3M+ records built by joining USDA NASS yield, climate, and soil data. Uses leakage-safe preprocessing and temporal validation across 10+ regression models, served through a Flask API with a React frontend.\
-`Python` `scikit-learn` `XGBoost` `Flask` `React`
+**[Factory Compliance System](https://github.com/Abdul-Wahab-17/FCS)**: AI safety monitoring for factory video
 
-**More projects**
+- Five-stage FastAPI pipeline: policy parsing, detection, severity classification, report generation, and escalation.
+- Uses an LLM (via Groq) to turn a compliance policy PDF into structured rules, then cross-checks each rule against the PDF to catch hallucinations.
+- YOLOv8 detects people, forklifts, and safety gear while CLIP infers scene context such as "hazardous zone"; findings are matched to the rules and graded LOW to CRITICAL.
+- Pushes High and Critical violations to a React dashboard over WebSockets and stores every finding as an auditable report in SQLite. Tested with pytest and Dockerized.
 
-- [TransitFlow](https://github.com/Abdul-Wahab-17/TransitFlow): transport management system with role-based access for admins, drivers, and customers. `Spring Boot` `Spring Security` `JPA` `MySQL`
-- [Memory-ECC](https://github.com/Abdul-Wahab-17/Memory-ECC): Hamming-code memory protection for autonomous vehicles, with error correction, scrubbing, and fault injection. `Python`
+`Python` `FastAPI` `YOLOv8` `CLIP` `OpenCV` `React` `SQLite` `Docker`
+
+**[AgroYield](https://github.com/Abdul-Wahab-17/AgroYield)**: crop yield prediction
+
+- Built a 3M+ record training set by joining USDA NASS yield, climate, and soil data at the county level.
+- Trained and compared 10+ regression models, including Random Forest, XGBoost, LightGBM, and CatBoost, with leakage-safe preprocessing and temporal validation.
+- Serves single-county and regional forecasts through a Flask API, with endpoints for model switching, metrics, and feature importance, behind a React dashboard.
+
+`Python` `scikit-learn` `XGBoost` `LightGBM` `CatBoost` `Flask` `React`
+
+**[TransitFlow](https://github.com/Abdul-Wahab-17/TransitFlow)**: transport management system
+
+- Manages a transport service end to end: customers, drivers, vehicles, schedules, fees, and salaries.
+- Role-based access with Spring Security for admins, drivers, customers, and a superadmin, each with their own dashboard.
+- Layered controller → service → repository design on Spring Data JPA and MySQL, with Thymeleaf views for search, editing, activation toggles, and pending fee and salary reports.
+
+`Java` `Spring Boot` `Spring Security` `Spring Data JPA` `Thymeleaf` `MySQL`
+
+**[Memory-ECC](https://github.com/Abdul-Wahab-17/Memory-ECC)**: fault-tolerant memory for autonomous vehicles
+
+- Simulates onboard vehicle memory protected by Hamming code (SEC-DED): corrects single-bit errors and detects double-bit errors.
+- Runs periodic memory scrubbing to fix latent single-bit errors before they accumulate into uncorrectable ones.
+- Includes fault injection, stress tests, and a GUI for watching errors get caught and corrected.
+
+`Python` `Hamming code` `Fault injection`
 
 ---
 
@@ -76,12 +105,12 @@ End-to-end ML system predicting U.S. county-level crop yields from 3M+ records b
 <div align="center">
 
   <img
-    src="https://github-readme-stats-sigma-five.vercel.app/api?username=Abdul-Wahab-17&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"
-    height="180em"
+    src="https://github-readme-stats.vercel.app/api?username=Abdul-Wahab-17&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"
+    height="180"
   />
   <img
-    src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Abdul-Wahab-17&layout=compact&theme=tokyonight&hide_border=true"
-    height="180em"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abdul-Wahab-17&layout=compact&theme=tokyonight&hide_border=true"
+    height="180"
   />
 
 </div>
